@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Image example</string>
+    <string name="image_url">
+        http://1.bp.blogspot.com/-_ybxn7cvHJE/T-Lrav5e1fI/AAAAAAAAGJ4/QqWx7LITko0/s1600/66571_Nature-Full-HD-Wallpaper-national-geographic-7822275-1920-1080.jpg
+    </string>
+    <string name="button_text">Open in browser</string>
+    <string name="dialog_title">Please, wait!</string>
+    <string name="dialog_body_text">Image loading...</string>
+    <string name="change_scale_text">Here you can change image scale:</string>
+</resources>
