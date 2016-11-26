@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dortmund"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:text="Рост:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:id="@+id/textView"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/seekBar2"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignStart="@+id/imageView1" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/seekBar2"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignEnd="@+id/imageView1"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:text="Любите бегать с мячиком?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/seekBar2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="29dp"
+        android:textColor="@android:color/white" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar" style="?android:attr/ratingBarStyleSmall"
+
+        android:minHeight="30dp"
+        android:maxWidth="20dp"
+        android:layout_below="@+id/switch1"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    <TextView
+        android:text="Любовь к футболу:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:src="@drawable/dortmund"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp" />
+
+    <Button
+        android:text="Проверить"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button"
+        android:elevation="0dp"
+        android:onClick="onMyButtonClick"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/seekBar2"
+        android:layout_toEndOf="@+id/seekBar2" />
+
+    <SeekBar
+        style="@style/Base.Widget.AppCompat.SeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="210"
+        android:progress="1"
+        android:id="@+id/seekBar2"
+        android:minWidth="150dp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp" />
+</RelativeLayout>

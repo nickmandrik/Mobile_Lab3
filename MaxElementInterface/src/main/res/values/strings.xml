@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MaxElementInterface</string>
+    <string name="enjoy">Enjoy yourself!</string>
+    <string name="wolfsburg">Вольфсбург</string>
+    <string name="dortmund">Боруссия Дортмунд</string>
+    <string name="bayern">Бавария Мюнхен</string>
+    <string name="bayer">Байер Леверкузен</string>
+</resources>
