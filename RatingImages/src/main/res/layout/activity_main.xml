@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mandrik.nick.ratingimages.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_message"
+            android:ems="10"
+            android:hint="@string/edit_message"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textColorHighlight="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColorLink="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/button_send"
+            android:id="@+id/button"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="#666565" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/imgview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear1"
+        android:layout_above="@id/relative2"
+        android:contextClickable="false">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_gravity="left|top"
+            android:src="@drawable/picture" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative2"
+        android:layout_alignLeft="@+id/imgview"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imgview">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butDislike"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/butLike"
+            android:src="@drawable/dislike"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/dark_embroidery" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butLike"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/like"
+            android:background="@drawable/dark_embroidery" />
+    </RelativeLayout>
+</RelativeLayout>
